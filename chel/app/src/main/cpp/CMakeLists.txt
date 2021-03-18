@@ -51,19 +51,19 @@ add_definitions(-DSPDLOG_COMPILED_LIB)
 add_library(spdlog STATIC IMPORTED )
 
 set_target_properties(
-        spdlog PROPERTIES IMPORTED_LOCATION C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/spdlog/build/armeabi-v7a/libspdlog.a
+        spdlog PROPERTIES IMPORTED_LOCATION C:/Users/Nerpa/AndroidStudioProjects/libs/spdlog/build/armeabi-v7a/libspdlog.a
 )
 target_include_directories(
         native-lib PUBLIC
-        C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/spdlog/spdlog/include
-        C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/mbedtls/mbedtls/include
+        C:/Users/Nerpa/AndroidStudioProjects/libs/spdlog/spdlog/include
+        C:/Users/Nerpa/AndroidStudioProjects/libs/mbedtls/mbedtls/include
 )
 
 add_library(mbedcrypto SHARED IMPORTED
 )
 
 set_target_properties(
-        mbedcrypto PROPERTIES IMPORTED_LOCATION C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/mbedtls/build/armeabi-v7a/library/libmbedcrypto.so
+        mbedcrypto PROPERTIES IMPORTED_LOCATION C:/Users/Nerpa/AndroidStudioProjects/libs/mbedtls/build/armeabi-v7a/library/libmbedcrypto.so
 )
 
 target_link_libraries( # Specifies the target library.

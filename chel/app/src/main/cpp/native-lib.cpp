@@ -21,9 +21,9 @@ Java_ru_iu3_chel_MainActivity_stringFromJNI(
     return env->NewStringUTF(hello.c_str());
 }
 
-#include "C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/mbedtls/mbedtls/include/mbedtls/entropy.h"
-#include "C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h"
-#include "C:/Users/Nerpa/AndroidStudioProjects/lab2/chel/libs/mbedtls/mbedtls/include/mbedtls/des.h"
+#include "C:/Users/Nerpa/AndroidStudioProjects/libs/mbedtls/mbedtls/include/mbedtls/entropy.h"
+#include "C:/Users/Nerpa/AndroidStudioProjects/libs/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h"
+#include "C:/Users/Nerpa/AndroidStudioProjects/libs/mbedtls/mbedtls/include/mbedtls/des.h"
 
 mbedtls_entropy_context entropy;
 mbedtls_ctr_drbg_context ctrDrbgContext;
